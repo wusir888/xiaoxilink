@@ -15,13 +15,42 @@
 
     <description>
         xiaoxilink短链接系统，承载高并发和海量存储等场景难题。
-
     </description>
 
+    <developers>
+        <developer>
+            <name>Zeyang</name>
+            <email>2843287911@qq.com</email>
+        </developer>
+    </developers>
+
     <properties>
+        <spring-boot.version>3.0.7</spring-boot.version>
+        <java.version>17</java.version>
+
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 
 </project>
